@@ -6,8 +6,8 @@ void suite_esuite(int longeur)
 {
     generator_generate(Debut);
     printf("(");
-    while (longeur-- >= 0) {
+    while (longeur-- >= 1) {
         printf("%d, ", generator_generate(Suivant));
     }
-    printf(")\n");
+    printf("%d)", generator_generate(Suivant));
 }
